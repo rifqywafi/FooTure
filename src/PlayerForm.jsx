@@ -113,6 +113,12 @@ export default function PlayerForm() {
               </h3>
               <ul className="list-disc list-inside text-sm text-yellow-900 mt-2 space-y-1">
                 <li>
+                  Website tidak meminta <strong>data pribadi</strong> apapun
+                </li>
+                <li>
+                  Data akan disimpan, namun hanya untuk keperluan <strong>optimasi</strong>
+                </li>
+                <li>
                   Website ini hanya digunakan untuk <strong>hiburan</strong>
                 </li>
                 <li>
@@ -234,7 +240,7 @@ export default function PlayerForm() {
         <dialog open className="modal">
           <div className="modal-box">
             <h3 className="font-bold text-lg">
-              {loading ? "Sedang melakukan cenayang..." : "Data Terkirim!"}
+              {loading ? "Sedang menghubungi cenayang..." : "Data Terkirim!"}
             </h3>
             <p className="py-4">
               {modalMessage}
