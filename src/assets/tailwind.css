@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins Extrabold';
+  src: url('/fonts/Poppins/Poppins-ExtraBold.ttf')
+}
+@font-face {
+  font-family: 'Volkhov';
+  src: url('/fonts/Volkhov/Volkhov-Regular.ttf');
+}
+@font-face {
+  font-family: 'Plaster';
+  src: url('/fonts/Plaster/Plaster-Regular.ttf');
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/Open_Sans/static/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf');
+}
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-opensans: "OpenSans", sans-serif;
+  --font-volkhov: "Volkhov", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-plaster: "Plaster", sans-serif;
+  --font-poppins-extrabold: "Poppins Extrabold", sans-serif;
+  --color-primary: #181E4B;
+  --color-secondary: #DF6951;
+  --color-ternary: #FFF1DA;
+  --color-sides: #F1A501;
+}
+body {
+  @apply font-poppins;
+}
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  --color-primary: #181E4B;
+  --color-secondary : #DF6951;
+}
