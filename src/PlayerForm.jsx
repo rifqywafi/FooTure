@@ -68,7 +68,7 @@ export default function PlayerForm() {
       const predicted = DecisionTree(dataForPrediction);
 
       // 3. Post data ke Supabase, posisi diambil dari hasil prediksi (pakai SupabaseService)
-      const dataToPost = { dataForPrediction, posisi: predicted };
+      const dataToPost = { ...dataForPrediction, posisi: predicted };
       await postTrainPemainBola(dataToPost);
 
       // 4. Ambil 3 pemain terkenal dengan posisi yang sama
