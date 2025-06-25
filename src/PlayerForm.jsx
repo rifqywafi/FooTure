@@ -184,7 +184,7 @@ export default function PlayerForm() {
               name: "keseimbangan",
               options: ["rendah", "sedang", "tinggi"],
             },
-            { label: "Kaki", name: "kaki", options: ["kanan", "kiri"] },
+            { label: "Kaki Dominan", name: "kaki", options: ["kanan", "kiri"] },
             {
               label: "Kemampuan Lompat",
               name: "lompat",
